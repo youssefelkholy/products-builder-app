@@ -28,12 +28,12 @@ const ProductCard = ( { product }: Iprops ) => {
                 <span className="font-bold text-blue-800">${ price }</span>
                 <div className="flex items-center space-x-2">
                     <Image imageURL={ category.imageURL } alt={ category.name } className="object-bottom w-10 h-10 rounded-full" />
-                    <span className="font-bold text-black">Cars</span>
+                    <span className="font-bold text-black">{ category.name }</span>
                 </div>
             </div>
             <div className="flex items-center justify-between mt-5 space-x-2">
-                <Button className="bg-indigo-700" width="w-full">Edit</Button>
-                <Button className="bg-red-700" width="w-full">Delete</Button>
+                <Button className="text-white bg-indigo-700" width="w-full">Edit</Button>
+                <Button className="text-white bg-red-700" width="w-full">Delete</Button>
             </div>
         </div >
     );
